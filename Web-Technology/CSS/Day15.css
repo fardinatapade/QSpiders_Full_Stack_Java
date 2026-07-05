@@ -1,0 +1,32 @@
+/* 1. Only attribute Selector */
+a[href] {
+    background-color: aqua;
+    color: black;
+    text-decoration: none;
+}
+
+/* 2. Attribute With Value Selector */
+a[href="Day11.html"] {
+    text-decoration: dotted;
+    background-color: coral;
+}
+
+/* 3. Attribute Value Start With  */
+img[alt^="Actor"] {  /* Use "^" Attribute Start With  */
+    border-radius: 50%;
+    height: 300px;
+    width: 300px;
+}
+
+/* 4. Attribute Value End With  */
+img[alt$="Actor"] {  /* Use "$" Attribute End With  */
+    height: 300px;
+    width: 250px;
+}
+
+/* Attribute If Value Contains */
+h2[class*="Hello"] { /* Use "*" Attribute If Value Contains  */
+    color: red;
+}
+
+

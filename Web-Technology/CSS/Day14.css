@@ -1,0 +1,19 @@
+section div{
+    border: solid;
+    width: 200px;
+    margin: 20px;
+    padding: 10px;
+}
+section{
+    display: flex;
+}
+section>h1{
+    color: orange;
+    text-decoration: underline;
+}
+div h1{
+    color: green;
+    font-size: 20px;
+}
+
+

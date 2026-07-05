@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day-12</title>
+</head>
+<body>
+       <h2>Validation Atributes</h2>
+       validation attributes works inside input tag 
+
+       <form action="" novalidate>
+            <label for="">Address : </label>
+            <textarea rows="5" cols="50" name="" id=""></textarea>
+            <br><br>
+            <input type="text" placeholder="Username">
+            <input type="email" placeholder="email" required>
+            <input type="number" disabled>
+            <input type="tel" placeholder="Contact" maxlength="10" minlength="10">
+            <input type="date" max="2026-06-31" min="2026-06-01">
+
+            <input type="text" placeholder="password" pattern="[A-Za-z0-9@]{8,9}">
+
+            <button>Submit</button>
+       </form> 
+</body>
+</html>
