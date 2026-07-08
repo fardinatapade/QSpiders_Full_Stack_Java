@@ -54,10 +54,11 @@
 }
 
 .price p strike {
-    color: grey;
+    color:#9CA3AF;
 }
 
 .price p {
+    color:#16A34A;
     font-weight: bold;
 }
 
