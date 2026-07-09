@@ -84,6 +84,6 @@
 
 .btn button:hover {
     cursor: pointer;
-    transform: translateY(-10px);
+    transform: translateY(-5px);
     transition: 0.2s;
 }

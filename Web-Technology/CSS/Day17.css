@@ -1,0 +1,43 @@
+* {
+    font-family: "Jost";
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 30px;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 60px;
+}
+
+.box {
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    margin: 30px;
+}
+
+/* RGB : Red - Green - Blue */
+.container .box1 {
+    background-color: rgb(235, 48, 48);
+}
+
+/* Hexa Color Code (A-F) and (0-9) is 6 digit code */
+.container .box2 {
+    background-color: #f3e814;
+}
+
+/* RGBA : Red - Green - Blue - alpha(Opacity) */
+.container .box3 {
+    background-color: rgba(50, 230, 50,0.7);
+}
+
+/* Linear Gradient */
+.container .box4 {
+    background: linear-gradient(90deg,rgb(235, 48, 48),#f3e814,rgba(50, 230, 50,0.7));
+}
