@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    background-color: rgb(251, 237, 220);
+    height: 200vh;
+}
+
+.box {
+    height: 100px;
+    width: 100px;
+    border: 3px dotted;
+    background-color: cornflowerblue;
+    position: absolute;
+}
+
+.box1{
+    bottom: 0;
+    right: 0;
+}
+
+.box2 {
+    bottom: 0;
+    left: 0;
+}
+
+.box3 {
+    bottom: 0;
+    left: 48%;
+}
+
+.box4 {
+    top: 0;
+    right: 0;
+}
+
+.box5 {
+    top: 0;
+    left: 48%;
+}
+
+.box6 {
+    top: 0;
+    left: 0;
+}
+
+.box7 {
+    top: 48%;
+    left: 48%;
+}
+
+.whatsapp {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: rgb(4, 245, 4);
+    position: fixed;
+    bottom: 0;
+    right: 10px;
+    margin: 20px;
+
+}
+
+a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-size: 40px;
+    color: white;
+    font-weight: bold;
+}
+
