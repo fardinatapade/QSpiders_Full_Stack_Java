@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Jost";
+}
+
+.container {
+    height: 100vh;
+    background-image: url("../assests/bg.jpg");
+    background-position: center;
+    background-size: cover;
+    padding: 20px;
+    background-attachment: fixed;
+}
+
+.container .searchbar {
+    height: 70px;
+    backdrop-filter: blur(20px);
+    border: 1px solid rgb(221, 215, 215);
+    border-radius: 20px;
+    box-shadow: 0px 20px 40px rgb(62, 62, 62);
+}
+
+.container .searchbar h1 {
+    color: white;
+    text-align: center;
+    margin-top: 10px;
+}
