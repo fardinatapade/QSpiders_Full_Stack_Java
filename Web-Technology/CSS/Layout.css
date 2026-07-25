@@ -1,0 +1,32 @@
+* {
+    font-family: Jost;
+}
+
+.parent {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.card {
+    min-height: 200px;
+    width: 300px;
+    box-shadow: 0px 0px 5px 1px rgb(178, 177, 177);
+    padding: 10px;
+}
+
+
+.card img {
+    width: inherit;
+    height: 200px;
+}
+
+.card button {
+    background-color: rgb(5, 129, 5);
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    padding: 5px 20px;
+    word-spacing: 3px;
+}
