@@ -25,6 +25,7 @@ body{
     background-size: cover;
     grid-column-start: 1;
     grid-column-end: 5;
+    border: 2px solid black;
 }
 
 
@@ -34,6 +35,8 @@ body{
     grid-template-rows: repeat(2, 1fr);
     /* padding: 7px; */
     gap: 10px;
+    border: 2px solid black;
+    padding: 10px;
     grid-column-start: 1;
     grid-column-end: 3;
     grid-row-start: 2;
@@ -76,6 +79,8 @@ body{
     grid-template-rows: repeat(5, 1fr);
     /* padding: 8px; */
     gap: 10px;
+    border: 2px solid black;
+    padding: 10px;
     grid-column-start: 3;
     grid-column-end: 5;
     grid-row-start: 2;
@@ -112,5 +117,6 @@ body{
     grid-column-end: 3;
     grid-row-start: 5;
     grid-row-end: 6;
-    padding: 40px;
+    border: 2px solid black;
+
 }

@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+
+    <style>
+        table {
+            margin-top: 40px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+    <!-- 1. Student Table
+
+    Create a table with the following columns:
+
+    Roll No
+    Name
+    Course -->
+
+    <table border="2" cellpadding="10">
+        <tr>
+            <th>Roll NO</th>
+            <th>Name</th>
+            <th>Course</th>
+        </tr>
+
+        <tr>
+            <td>10</td>
+            <td>Fardin</td>
+            <td>Full-Stack Java</td>
+        </tr>
+
+    </table>
+
+
+        <!-- 2.
+        +--------------------------------------+
+    |          Student Details             |
+    +--------------------------------------+
+    | Roll No | Name | Course | Marks      |
+    +--------------------------------------+
+    | 101     | Rahul| BCA    | 85         |
+    +--------------------------------------+ -->
+
+
+    <table border="2" cellpadding="10">
+
+        <tr>
+            <th colspan="4">
+                Student Details
+            </th>
+        </tr>
+
+        <tr>
+            <th>
+                Roll No
+            </th>
+
+            <th>
+                Name
+            </th>
+
+            <th>
+                Course
+            </th>
+
+            <th>
+                Marks
+            </th>
+        </tr>
+
+        <tr>
+            <td>
+                101
+            </td>
+
+            <td>
+                Rahul
+            </td>
+
+            <td>
+                BCA 
+            </td>
+
+            <td>
+                85
+            </td>
+        </tr>
+
+    </table>
+
+
+    <!-- 3. 
+
+    +---------------------------+
+    | Department | Employee     |
+    +------------+--------------+
+    | IT         | Rahul        |
+    |            | Aman         |
+    +------------+--------------+
+    | HR         | Neha         |
+    |            | Priya        |
+    +------------+--------------+ 
+    
+    -->
+
+    <table border="2" cellpadding="10">
+
+        <tr>
+            <th>Department</th>
+            <th>Employee</th>
+        </tr>
+
+        <tr>
+            <td rowspan="2">IT</td>
+            <td>Rahul</td>
+        </tr>
+
+        <tr>
+            <td>Aman</td>
+        </tr>
+
+        <tr>
+            <td rowspan="2">HR</td>
+            <td>Neha</td>
+        </tr>
+
+        <tr>
+            <td>Priya</td>
+        </tr>
+
+    </table>
+
+    <!-- 4.
+     
+    +----------------------------------------------+
+    |             Student Report Card              |
+    +----------------------------------------------+
+    | Roll No | Name  | Subject | Marks           |
+    +---------+-------+---------+-----------------+
+    | 101     | Rahul | Java    | 90              |
+    |         |       | HTML    | 95              |
+    |         |       | CSS     | 88              |
+    +---------+-------+---------+-----------------+
+    
+    -->
+
+    <table border="2" cellpadding="10">
+
+        <tr>
+            <th colspan="4">Student Card</th>
+        </tr>
+
+        <tr>
+            <th>Roll No</th>
+            <th>Name</th>
+            <th>Subject</th>
+            <th>Marks</th>
+        </tr>
+
+        <tr>
+            <td rowspan="3">101</td>
+            <td rowspan="3">Rahul</td>
+            <td>Java</td>
+            <td>90</td>
+        </tr>
+
+        <tr>
+            <td>HTML</td>
+            <td>95</td>
+        </tr>
+
+        <tr>
+            <td>CSS</td>
+            <td>98</td>
+        </tr>
+
+    </table>
+
+
+    <!-- 5.
+
+     +----------------------------------+
+    | Department | Employee | Salary   |
+    +------------+----------+----------+
+    | IT         | Rahul    | 50000    |
+    |            | Aman     | 60000    |
+    +------------+----------+----------+
+    | HR         | Neha     | 45000    |
+    |            | Priya    | 55000    |
+    +------------+----------+----------+
+
+    -->
+
+    <table border="2" cellpadding="10">
+        <tr>
+            <th>Departments</th>
+            <th>Employee</th>
+            <th>Salary</th>
+        </tr>
+
+        <tr>
+            <td rowspan="2">IT</td>
+            <td>Rahul</td>
+            <td>50000</td>
+        </tr>
+
+        <tr>
+            <td>Aman</td>
+            <td>60000</td>
+        </tr>
+
+        <tr>
+            <td rowspan="2">HR</td>
+            <td>Neha</td>
+            <td>45000</td>
+        </tr>
+
+        <tr>
+            <td>Priya</td>
+            <td>55000</td>
+        </tr>
+    </table>
+
+
+    <!-- 6. 
+     
+    +-------------------------------------------------------------+
+    | Time       | Monday | Tuesday | Wednesday | Thursday |Friday |
+    +------------+--------+---------+-----------+----------+-------+
+    | 9-10       | Java   | HTML    | CSS       | SQL      | React |
+    | 10-11      | Java   | HTML    | CSS       | SQL      | React |
+    | 11-12      |        Lunch Break                              |
+    | 12-1       | Apti   | Java    | React     | SQL      | HTML  |
+    +-------------------------------------------------------------+
+
+    --> 
+    
+    <table border="1" cellpadding="10" cellspacing="0">
+        <tr>
+            <th>Time</th>
+            <th>Monday</th>
+            <th>Tuesday</th>
+            <th>Wednesday</th>
+            <th>thursday</th>
+            <th>Friday</th>
+        </tr>
+
+        <tr>
+            <td>9-10</td>
+            <td>JAVA</td>
+            <td>HTML</td>
+            <td>CSS</td>
+            <td>SQL</td>
+            <td>REACT</td>
+        </tr>
+        
+        <tr>
+            <td>10-11</td>
+            <td>JAVA</td>
+            <td>HTML</td>
+            <td>CSS</td>
+            <td>SQL</td>
+            <td>REACT</td>
+        </tr>
+
+        <tr>
+            <td>11-12</td>
+            <th colspan="5">Lunch Break </th>
+        </tr>
+
+
+        <tr>
+            <td>12-01</td>
+            <td>APTI</td>
+            <td>JAVA</td>
+            <td>CSS</td>
+            <td>SQL</td>
+            <td>REACT</td>
+        </tr>
+    </table>
+
+
+    </div>
+
+</body>
+
+</html>
