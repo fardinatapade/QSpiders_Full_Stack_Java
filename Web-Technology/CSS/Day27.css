@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    height: 100vh;
+    width: 100%;
+    background-image: url("../assests/gpl-1.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.container .toss {
+   position: absolute;
+   bottom: 30px;
+   left: 42%;
+}
+
+.container .toss img:hover {
+    transform: translateY(-400px) rotateX(1600deg);
+    transition: 2.5s;
+}
