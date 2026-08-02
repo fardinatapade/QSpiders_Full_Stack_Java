@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    height: 100vh;
+    width: 100%;
+    background-image: url('https://wallpapercave.com/wp/xm86sSz.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .child img {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    animation: Bounce 1.5s ease-in-out infinite;
+}
+
+
+@keyframes Bounce {
+    0% {
+        transform: translateY(200px);
+    }
+  
+
+    50% {
+        transform: translateY(-200px) rotate(180deg);
+    }
+
+
+    100% {
+        transform: translateY(200px) rotate(360deg);
+    }
+
+}
+
+
+.container2 {
+   height: 100vh;
+   width: 100%; 
+}
+
+.container2 .child {
+    height: 100vh;
+    width: 100%;
+    background-image: url('../assests/santa.png');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    animation: Disco 0.5s infinite;
+}
+
+
+@keyframes Disco {
+    0% {
+        background-color: red;
+    }
+
+    10% {
+        background-color: yellow;
+    }
+
+    20% {
+        background-color: blue;
+    }
+
+    30% {
+        background-color: green;
+    }
+
+    40% {
+        background-color: aqua;
+    }
+  
+
+    50% {
+        background-color: red;
+    }
+
+    60% {
+        background-color: red;
+    }
+
+    70% {
+        background-color: yellow;
+    }
+
+    80% {
+        background-color: blue;
+    }
+
+    90% {
+        background-color: green;
+    }
+
+    100% {
+        background-color: aqua;
+    }
+  
+}
+
+
+.container2 .child img {
+    animation: Shake 0.4s infinite;
+}
+
+@keyframes Shake {
+    0% {
+        transform: translatex(-200px);
+    }
+}

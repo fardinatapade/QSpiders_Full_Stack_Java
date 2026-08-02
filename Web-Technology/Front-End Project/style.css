@@ -1,0 +1,268 @@
+:root {
+    --titlecolor : rgb(176, 2, 2);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Jost";
+}
+
+.navbar {
+    padding: 20px;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    height: 80px;
+    width: inherit;
+    background-color: white;
+    backdrop-filter: blur(10px);
+    border: 1px solid white;
+    border-radius: 10px;
+}
+
+nav .title {
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--titlecolor);
+}
+
+nav .title h2 {
+    font-family: "Grand Hotel";
+    font-size: 40px;
+    letter-spacing: 2px;
+}
+
+nav ul {
+    width: 30%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav ul li {
+    list-style-type: none;
+    font-weight: bold;
+}
+
+nav ul li a {
+    color: black;
+    text-decoration: none;
+}
+
+.homepage {
+    height: 100vh;
+    background-image: url('./assets/bike-bg2.jpg');
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.homepage .content {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.homepage .content .side {
+    height: 80%;
+    width: 45%;
+    padding: 20px;
+}
+
+.homepage .content .side1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.homepage .content .side1 h1 {
+    transform: rotate(-10deg);
+    color: white;
+    font-weight: bold;
+    font-size: 100px;
+    padding: 20px;
+}
+
+
+.about {
+    padding-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 30px;
+    height: 100vh;
+    width: 100%;
+    background:linear-gradient(rgba(148, 145, 145, 0.2), rgba(136, 135, 135, 0.2)), url("./assets//trackbg.jpg");
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.card {
+    margin-top: 70px;
+}
+
+.about .card1 .contentabout {
+    margin-top: 60px;
+    padding: 20px;
+    overflow: scroll;
+    scrollbar-width: none;
+    backdrop-filter: blur(10px);
+    background-color: rgba(243, 240, 240, 0.8);
+    border-radius: 0px 30px 0px 30px;
+}
+
+.about .card1 .contentabout .title h2 {
+    color: var(--titlecolor);
+    font-size: 40px;
+}
+
+
+
+.about .card2 {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+
+
+.about .card2 .child:first-child {
+    background-image: url('./assets/1.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+.about .card2 .child:nth-child(2){
+    background-image: url('./assets/2.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+.about .card2 .child:nth-child(3) {
+    background-image: url('./assets/3.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+.about .card2 .child:last-child {
+    background-image: url('./assets/4.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+
+.service {
+    height: 100vh;
+    width: 100%;
+    padding-top: 130px;
+    background-image: url("./assets/forest-road.jpg");
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.service .title {
+    padding: 10px;
+}
+
+.service .title h2 {
+    color: var(--titlecolor);
+    font-size: 30px;
+}
+
+.service .box {
+    height: 70vh;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.card {
+    margin: 20px;
+    border-radius: 10px;
+    perspective: 1000px;
+}
+
+.servicecard {
+    width: 450px;
+    height: 450px;
+}
+
+.card .cardcontent button:hover {
+    cursor: pointer;
+    transform: translateY(-10px);
+    transition: 0.5s;
+}
+
+.box .card .image  img {
+    width: 450px;
+    height: 300px;
+}
+
+.card .cardcontent {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.cardinner {
+    transform-style: preserve-3d;
+}
+
+.card .cardcontent button {
+    padding: 10px 40px;
+    border: none;
+    background-color: var(--titlecolor);
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.backcard {
+    height: inherit;
+    width: inherit;
+    transform: rotateY(180deg);
+    color: black;
+    width: 450px;
+    height: 450px;
+    background-color: white;
+}
+
+.frontcard {
+    width: 450px;
+    height: 450px;
+    background-color: white;
+}
+
+.card:hover .cardinner {
+    cursor: pointer;
+    transform: rotateY(180deg);
+    transition: 0.6s;
+}
+
+.frontcard, .backcard {
+    position: absolute;
+    backface-visibility: hidden;
+}
+
+
+
+

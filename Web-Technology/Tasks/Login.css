@@ -1,7 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Jost";
 }
 
 .main {
@@ -87,7 +87,7 @@
 }
 
 .first .formBody button {
-    margin-top: 17px;
+    margin-top: 10px;
     height: 45px;
     width: 100%;
     background-color: brown;
@@ -103,4 +103,25 @@
     margin-top: 50px;
     font-weight: bold;
     color: rgb(81, 80, 80);
+}
+
+.logos {
+    height: 30px;
+    width: 300px;
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.logos img {
+    padding: 7px 20px;
+    height: 25px;
+    width: 25px;
+}
+
+.logos img:hover {
+    cursor: pointer;
+    box-shadow: 0px 0px 20px 4px grey;
+    border-radius: 8px;
 }
