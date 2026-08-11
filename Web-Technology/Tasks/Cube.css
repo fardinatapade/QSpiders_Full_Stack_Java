@@ -10,7 +10,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(90deg, rgb(38, 38, 38),rgb(56, 54, 54),rgb(40, 38, 38));
+    background: linear-gradient(90deg, rgb(74, 72, 72),rgb(141, 134, 134),rgb(79, 77, 77));
 }
 
 .cube {
@@ -19,51 +19,70 @@
     align-items: center;
     transform-style: preserve-3d;
     position: relative;
-    animation: cuberotation 4s linear infinite;
+    animation: cuberotation 8s linear infinite;
 }
 
 .cube .sides {
     height: 300px;
     width: 300px;
     position: absolute;
+    border: 3px solid white;
 }
 
 .cube .sides:first-child {
-    background-color: rgba(255, 0, 0, 0.7);
+    background-image: url("https://i.pinimg.com/736x/43/f9/e6/43f9e689fe2ec9cc08654ccd84bf3b1b.jpg");
+    background-position: center;
+    background-size: cover;
     transform: translateZ(150px);
 }
 
 .cube .sides:nth-child(2) {
-    background-color: rgba(0, 255, 0, 0.7);
+    background-image: url("https://i.pinimg.com/736x/2f/30/bd/2f30bd0a955799b28638e7f70aaaab39.jpg");
+    background-position: center;
+    background-size: cover;
     transform: rotateY(180deg) translateZ(150px);
 }
 
 .cube .sides:nth-child(3) {
-    background-color: rgba(0, 0, 255, 0.7);
+    background-image: url("https://i.pinimg.com/1200x/b4/ac/be/b4acbeb83cfe87fbe0ead0041f58a45e.jpg");
+    background-position: center;
+    background-size: cover;
     transform: rotateY(90deg) translateZ(150px);
 }
 
 .cube .sides:nth-child(4) {
-    background-color: rgba(247, 0, 255, 0.7);
+    background-image: url("https://i.pinimg.com/736x/38/0e/96/380e960a212950464b4afb312b50cf82.jpg");
+    background-position: center;
+    background-size: cover;
     transform: rotateY(-90deg) translateZ(150px);
 }
 
 .cube .sides:nth-child(5) {
-    background-color: rgba(255, 174, 0, 0.7);
+    background-image: url("https://i.pinimg.com/736x/f9/10/b6/f910b6eff6dda04a12b72fd182680e2e.jpg");
+    background-position: center;
+    background-size: cover;
     transform: rotateX(90deg) translateZ(150px);
 }
 
 .cube .sides:nth-child(6) {
-    background-color: rgba(255, 251, 0, 0.7);
+    background-image: url("https://i.pinimg.com/736x/46/4a/9e/464a9ebd607c7bf1af48fc8affbc6ecd.jpg");
+    background-position: center;
+    background-size: cover;
     transform: rotateX(-90deg) translateZ(150px);
 }
 
 @keyframes cuberotation {
     0% {
         transform: rotateX(0deg) rotateY(0deg);
+    }  
+
+    50% {
+        transform: rotateX(0deg) rotateY(360deg);
     }
 
     100% {
-        transform: rotateX(360deg) rotateY(360deg);
+        transform: rotateX(360deg) rotateY(0deg);
     }
+
+
 }
