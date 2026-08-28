@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Jost";
+}
+
+.container {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    background-image: url('https://images.unsplash.com/photo-1528460033278-a6ba57020470?q=80&w=735&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.title {
+    margin-top: 100px;
+    margin: 30px;
+}
+
+.title h2 {
+    font-family: "Grand Hotel", cursive;
+    font-size: 90px;
+    font-weight: normal;
+    color: white;
+    letter-spacing: 3px;
+    text-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.inputbox {
+    height: 80px;
+    width: 30%;
+    box-shadow: 0 5px 10px 2px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    background-color: rgba(249, 247, 247, 0.4);
+    border: 1px solid white;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    padding: 5px;
+}
+
+.inputbox #task {
+    width: 70%; 
+    height: 20px;
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+}
+
+.inputbox #btn {
+    height: 40px;
+    width: 40px;
+    background-color: rgb(3, 200, 3);
+    border: none;
+    color: white;
+    font-weight: bold;
+    font-size: 17px;
+    border-radius: 50%;
+}
+
+.inputbox #btn:hover {
+    cursor: pointer;
+    transform: rotate(360deg);
+    transition: 1s;
+}
+
+.listbox {
+    margin-top: 30px;
+}
+
+.task {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 5px 10px 2px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    background-color: rgba(255, 255, 255, 0.4);
+    border: 1px solid white;
+    border-radius: 10px;
+    width: 500px;
+    min-height: 50px;
+    padding: 10px;
+    font-size: 17px;
+    font-weight: bold;
+    margin: 10px;
+}
+
+.btngrp {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.delete {
+    height: 40px;
+    width: 40px;
+    background-color: red;
+    border: none;
+    color: white;
+    font-weight: bold;
+    font-size: 17px;
+    border-radius: 50%; 
+}
+
+.delete:hover {
+    cursor: pointer;
+    transform: rotate(360deg);
+    transition: 1s;
+}
+
+.update {
+    height: 40px;
+    width: 40px;
+    background-color: rgb(255, 247, 0);
+    border: none;
+    color: black;
+    font-weight: bold;
+    font-size: 17px;
+    border-radius: 50%;   
+}
+
+.update:hover {
+    cursor: pointer;
+    transform: rotate(360deg);
+    transition: 1s;
+}
